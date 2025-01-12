@@ -60,13 +60,13 @@
                         <ion-icon class="me-2" name="lock-closed-outline"></ion-icon>
                         {% trans "WorkSpace Sign-in/Register" %}
                     </button>
-                    <!-- {% if not initialize_database %}
+                    {% if not initialize_database %}
                         <small class="text-center">
-                            <a href="{% url 'forgot-password' %}" class="oh-link oh-link--secondary justify-content-center">
-                                {% trans "Forgot password" %}?
+                            <a href="{% url 'mlogin' %}" class="oh-link oh-link--secondary justify-content-center">
+                                {% trans "Required Manual Login" %}?
                             </a>
                         </small>
-                    {% endif %} -->
+                    {% endif %}
                 </form>
                 {% if initialize_database %}
                     <div>

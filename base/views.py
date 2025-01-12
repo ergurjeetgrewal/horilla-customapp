@@ -728,6 +728,7 @@ def EmployeeOAuthLogin(request):
                 workinfo.company_id=company
                 workinfo.save()
         login(request, user)
+        messages.success(request,_("Login successful."))
         return redirect("/")
     except Exception as e:
         print(e)
